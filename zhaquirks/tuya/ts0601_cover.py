@@ -1,7 +1,16 @@
 """Tuya based cover and blinds."""
 
 from zigpy.profiles import zha
-from zigpy.zcl.clusters.general import Basic, GreenPowerProxy, Groups, Identify, OnOff, Ota, Scenes, Time
+from zigpy.zcl.clusters.general import (
+    Basic,
+    GreenPowerProxy,
+    Groups,
+    Identify,
+    OnOff,
+    Ota,
+    Scenes,
+    Time,
+)
 
 from zhaquirks.const import (
     DEVICE_TYPE,
@@ -346,6 +355,7 @@ class TuyaZemismartSmartCover0601_2_inv_position(TuyaWindowCover):
             },
         },
     }
+
 
 class TuyaZemismartSmartCover0601_2_inv_position_ac(TuyaWindowCover):
     """Tuya Zemismart curtain cover motor, AC-powered."""
